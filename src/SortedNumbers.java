@@ -20,9 +20,9 @@ public class SortedNumbers {
     }
 
     public void selectionSort() {
-        for (int unsortedPos = 0; unsortedPos < numbers.length; unsortedPos++) {
+        for (int unsortedPos = 0; unsortedPos < firstFree -1; unsortedPos++) {
             int minPos = unsortedPos;
-            for (int searchPos = unsortedPos + 1; searchPos < numbers.length; searchPos++) {
+            for (int searchPos = unsortedPos + 1; searchPos < firstFree; searchPos++) {
                 if(numbers[searchPos] < numbers[minPos]){
                     minPos = searchPos;
                 }

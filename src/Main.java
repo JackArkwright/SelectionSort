@@ -23,5 +23,6 @@ class Main {
     public static void main(String[] args){
         SortedNumbers sorted = new SortedNumbers(10);
         sorted.addNumber(7);
+        sorted.addNumber(3);
     }
 }
